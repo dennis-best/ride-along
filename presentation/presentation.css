@@ -34,17 +34,24 @@ article {
 }
 
 
-h1 {
+h1 a, h1 a:visited {
+  display: block;
   background-color : #91B7BA;
   color            : white;
   float            : right;
   font-family      : NewsGothicFSBookRegular, 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', Helvetica, Arial, sans-serif;
-  font-size        : 3em;
+  font-size        : 1.4em;
   font-weight      : 400;
   margin-top       : 18%;
   padding          : .28em;
-
+  text-decoration: none;
 }
+
+h1 a:hover,
+header h2:hover {
+  background: #b14a64;
+}
+
 
 h3, h4 {
   font-family      : NewsGothicFSMediumRegular, 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', Helvetica, Arial, sans-serif;
