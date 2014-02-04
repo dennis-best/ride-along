@@ -1,0 +1,61 @@
+
+
+/* Stuff for RideAlong */
+
+.ride-along-start {
+clear: both;
+  font-family: NewsGothicFSBookRegular, 'Helvetica Neue UltraLight', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background-color: #ED7572;
+  float: left;
+  padding: .28em;
+  color: white;
+  margin-top: 18%;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+
+.ride-along-active {
+    position : relative;
+}
+
+.ride-along-active .ride-along-box >p:after {
+  float   : left;
+  padding : .1em .6em;
+  content: 'Next';
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  color: #FFF9DE;
+  background: #EBE499;
+
+}
+
+.ride-along-last .ride-along-box >p:after {
+  content: "That's all, amigo!";
+
+}
+
+.ride-along .ride-along-box {
+  display : none;
+}
+
+.ride-along-active .ride-along-box {
+  background    : #FFF9DE;
+  border        : 2px #FFEEAD solid;
+  display       : block;
+  font-size     : .8em;
+  font-weight   : bold;
+  left          : 36px;
+  max-width     : 20em;
+  opacity       : .99;
+  padding       : .5em 1.2em 2.5em 1.2em;
+  position      : absolute;
+  top        : 95%;
+  z-index       : 9999;
+  cursor: pointer;
+  font-size: .7em;
+  box-shadow:         -4px -4px 0px 0px rgba(50, 50, 50, 0.05);
+
+}
