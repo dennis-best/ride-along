@@ -29,51 +29,45 @@ The script will bounce through the elements until it reaches the last element. T
 
 ### Javascript
 
-`
-$( document ).ready(function() {
-  $('.ride-along').click(function(event){
+    $( document ).ready(function() {
+      $('.ride-along').click(function(event){
 
-      // Define some stuff
-      var target = $(event.currentTarget);
-      var index = target.data('ride-along-stop');
-      var firstDiv = $('[data-ride-along-stop=1]');
-      var nextDiv = $('[data-ride-along-stop="' + (index + 1) + '"]');
-      var lastDiv = $('[data-ride-along-stop="' + (index + 2) + '"]');
-
-      // Remove stray boxes
-      $('.ride-along-box').remove();
-
-      // Do stuff when the start or boxes are clicked
-      if ((target.hasClass("ride-along-active") || target.hasClass("ride-along-start")) && (!target.hasClass('ride-along-last'))) {
-        target.removeClass('ride-along-active').addClass('ride-along-completed');
-        nextDiv.addClass('ride-along-active');
-        nextDiv.append('<div class="ride-along-box">' + nextDiv.data('ride-along-text') + '</div>');
-
-        // Animate scrolling
-        $('html').animate({
-            scrollTop: $('.ride-along-active').offset().top
-        }, 700);
-      }
-
-      // Handle the last box differently
-      if(lastDiv.length === 0) {
-        nextDiv.addClass('ride-along-last');
-      }
-      if (target.hasClass('ride-along-last')) {
-        $('.ride-along').removeClass('ride-along-active ride-along-last ride-along-completed');
-      }
-  });
-});
-`
+        // Define some stuff
+        var target = $(event.currentTarget);
+        var index = target.data('ride-along-stop');
+        var firstDiv = $('[data-ride-along-stop=1]');
+        var nextDiv = $('[data-ride-along-stop="' + (index + 1) + '"]');
+        var lastDiv = $('[data-ride-along-stop="' + (index + 2) + '"]');
+  
+        // Remove stray boxes
+        $('.ride-along-box').remove();
+  
+        // Do stuff when the start or boxes are clicked
+        if ((target.hasClass("ride-along-active") || target.hasClass("ride-along-start")) && (!target.hasClass('ride-along-last'))) {
+          target.removeClass('ride-along-active').addClass('ride-along-completed');
+          nextDiv.addClass('ride-along-active');
+          nextDiv.append('<div class="ride-along-box">' + nextDiv.data('ride-along-text') + '</div>');
+  
+          // Animate scrolling
+          $('html').animate({
+              scrollTop: $('.ride-along-active').offset().top
+          }, 700);
+        }
+  
+        // Handle the last box differently
+        if(lastDiv.length === 0) {
+          nextDiv.addClass('ride-along-last');
+        }
+        if (target.hasClass('ride-along-last')) {
+          $('.ride-along').removeClass('ride-along-active ride-along-last ride-along-completed');
+        }
+      });
+    });
 
 
 
-Bring your own styles
+
+### Bring your own styles
 
 Style boxes any way you like. Boxes can be styled as popups or inline. You can even use :before and :after psuedo classes to add buttons, arrows, etc.
 
-
-Set the order and add text/html
-
-Add two data attributes to any element. Ride Along will glide through the stops and display the text attributes in a block element. When block is clicked, the next one is displayed until the last one is reached.
- No newline at end of file
