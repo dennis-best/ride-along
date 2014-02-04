@@ -1,0 +1,68 @@
+/* Stuff for demo presentation -- not really needed for RideAlong */
+
+html {
+  font-size: 16px;
+  padding: 0;
+}
+
+body {
+  font-size: 150%;
+  font-family: NewsGothicFSBookRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 110%;
+  margin: 0;
+  background-image: url('ridealongbg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment : fixed;
+  color: #5b5c5d;
+}
+
+a, a:visited {
+  color: #b14a64;
+}
+section {
+  padding: 2em;
+  overflow: hidden;
+}
+
+article {
+  margin-bottom: 20em;
+  background-color: white;
+  margin-top: 2em;
+  padding: 2em;
+  opacity       : .99;
+}
+
+
+h1 {
+  background-color : #91B7BA;
+  color            : white;
+  float            : right;
+  font-family      : NewsGothicFSBookRegular, 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', Helvetica, Arial, sans-serif;
+  font-size        : 3em;
+  font-weight      : 400;
+  margin-top       : 18%;
+  padding          : .28em;
+
+}
+
+h3, h4 {
+  font-family      : NewsGothicFSMediumRegular, 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', Helvetica, Arial, sans-serif;
+  line-height: auto;
+
+}
+
+
+
+header {
+  height: 20em;
+  margin: 0;
+}
+
+
+
+section {
+  clear: both;
+  background-color: transparent;
+}
+
