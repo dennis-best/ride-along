@@ -1,40 +1,45 @@
-
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #91B7BA;
+}
 
 /* Stuff for RideAlong */
 
 .ride-along-start {
-clear: both;
-  font-family: NewsGothicFSBookRegular, 'Helvetica Neue UltraLight', Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  background-color: #ED7572;
-  float: left;
-  padding: .28em;
-  color: white;
-  margin-top: 18%;
-  font-size: 2em;
-  cursor: pointer;
+  background-color : #ED7572;
+  clear            : both;
+  color            : white;
+  cursor           : pointer;
+  float            : left;
+  font-weight      : 400;
+  padding          : .28em;
 }
 
+article {
+  clear : both;
+  background-color: white;
+  margin: 5em;
+  padding: 2em;
+
+}
 
 .ride-along-active {
-    position : relative;
+  position : relative;
 }
 
 .ride-along-active .ride-along-box >p:after {
-  float   : left;
-  padding : .1em .6em;
-  content: 'Next';
-  position: absolute;
-  bottom: 1em;
-  right: 1em;
-  color: #FFF9DE;
-  background: #EBE499;
-
+  background : #EBE499;
+  bottom     : 1em;
+  color      : #FFF9DE;
+  content    : 'Next';
+  float      : left;
+  padding    : .1em .6em;
+  position   : absolute;
+  right      : 1em;
 }
 
 .ride-along-last .ride-along-box >p:after {
   content: "That's all, amigo!";
-
 }
 
 .ride-along .ride-along-box {
@@ -42,20 +47,18 @@ clear: both;
 }
 
 .ride-along-active .ride-along-box {
-  background    : #FFF9DE;
-  border        : 2px #FFEEAD solid;
-  display       : block;
-  font-size     : .8em;
-  font-weight   : bold;
-  left          : 36px;
-  max-width     : 20em;
-  opacity       : .99;
-  padding       : .5em 1.2em 2.5em 1.2em;
-  position      : absolute;
-  top        : 95%;
-  z-index       : 9999;
-  cursor: pointer;
-  font-size: .7em;
-  box-shadow:         -4px -4px 0px 0px rgba(50, 50, 50, 0.05);
-
+  background  : #FFF9DE;
+  border      : 2px #FFEEAD solid;
+  cursor      : pointer;
+  display     : block;
+  font-size   : .7em;
+  font-size   : .8em;
+  font-weight : bold;
+  left        : 36px;
+  max-width   : 20em;
+  opacity     : .99;
+  padding     : .5em 1.2em 2.5em 1.2em;
+  position    : absolute;
+  top         : 95%;
+  z-index     : 9999;
 }

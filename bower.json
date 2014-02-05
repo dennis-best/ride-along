@@ -1,0 +1,22 @@
+{
+  "name": "ride-along",
+  "main": "ride-along.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/dennis-best/ride-along",
+  "authors": [
+    "dennis-best <dennis.best@me.com>"
+  ],
+  "description": "A simple approach to web app walkthroughs",
+  "keywords": [
+    "javascript",
+    "walkthrough"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
