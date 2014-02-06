@@ -5,8 +5,8 @@ $( document ).ready(function() {
       var target = $(event.currentTarget);
       var index = target.data('ride-along-stop');
       var firstDiv = $('[data-ride-along-stop=1]');
-      var nextDiv = $('[data-ride-along-stop="' + (index + 1) + '"]');
-      var lastDiv = $('[data-ride-along-stop="' + (index + 2) + '"]');
+      var nextDiv = $('[data-ride-along-stop="' + (index + 1) + '"]:first');
+      var lastDiv = $('[data-ride-along-stop="' + (index + 2) + '"]:first');
 
       // Remove stray boxes
       $('.ride-along-box').remove();
