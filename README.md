@@ -23,7 +23,7 @@ You'll end up with something this:
 
     <article  class="ride-along"  data-ride-along-stop="2" data-ride-along-text="<h3>Use HTML Here</h3><p>Blah blah blah.</p>">
 
-    <article  class="ride-along"  data-ride-along-stop="2" data-ride-along-text="<h3>Use HTML Here</h3><p>Blah blah blah.</p>">
+    <article  class="ride-along"  data-ride-along-stop="3" data-ride-along-text="<h3>Use HTML Here</h3><p>Blah blah blah.</p>">
 
 The script will bounce through the elements until it reaches the last element. Then stop.
 
